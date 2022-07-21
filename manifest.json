@@ -1,0 +1,24 @@
+{
+"manifest_version": 3,
+"name": "BackgroundSwitcher",
+"description": "Add a custom background to Google.com page"
+,"version": "1.0"
+,"icons": {
+  "16": "/images/logo16.png"
+ ,"48": "/images/logo48.png"
+ , "128": "/images/logo128.png"
+},
+
+"action": {
+  "default_icon": {
+    "16": "/images/logo16-2.png"
+    ,"48": "/images/logo48-2.png"
+    , "128": "/images/logo128-2.png"
+}
+},
+
+"content_scripts": [{
+    "matches":["https://www.google.com/*"],
+    "css": ["main.css"]
+}]
+    }
